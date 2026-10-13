@@ -53,7 +53,7 @@ def main() -> None:
 
     print("\nСамолёты быстрее средней скорости:")
     fast_planes = db.get_aeroplanes_with_higher_speed()
-    for p in fast_planes[:10]:  # первые 10 для примера
+    for p in fast_planes[:10]:
         print(p["icao24"], p["callsign"], p["velocity"])
 
     keyword = "ACA"
